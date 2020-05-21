@@ -1,0 +1,13 @@
+<html>
+<body>
+ <button onclick="chngsize()">click to change the font size</button>
+ <p id="nm">Sagar Gulhane</p>
+ <script>
+function chngsize() { 
+ var str = document.getElementById("nm").innerHTML;
+ var res= str.fontsize(7);
+ document.getElementById("nm").innerHTML = res;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<body>
+ <p>Array descending Sort</p>
+ <button onclick="d_sort()">Descending sort</button>
+ <p id="disp"></p>
+ <script>
+var num = [40, 100, 1, 5, 25, 10];
+document.getElementById("disp").innerHTML = num; 
+ function d_sort() { 
+ num.sort(function(a, b){return b - a});
+ document.getElementById("disp").innerHTML = num;
+}
+</script> 
+</body>
+</html>

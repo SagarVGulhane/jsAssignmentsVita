@@ -1,0 +1,16 @@
+<html>
+<body> 
+<p>Array ascending Sort</p> 
+<button onclick="a_sort()">Ascending sort</button> 
+<p id="disp"></p>
+ <script>
+var num = [5,20,12,2,3,-5,0,99,150,66];
+document.getElementById("disp").innerHTML = num; 
+function a_sort() 
+{
+ num.sort(function(a, b){return a - b}); 
+ document.getElementById("disp").innerHTML = num;
+}
+</script> 
+</body>
+</html>
